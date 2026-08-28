@@ -6,6 +6,16 @@ preco_final = 0.0
 produtos = []
 
 def CalcularValorFinal(valor_base = 0.0, taxa_desconto = 0.0):
+    '''
+    Aplica o desconto ao valor base
+
+    Args:
+        valor_base (float): valor original do produto
+        taxa_desconto (float): taxa de desconto a ser aplicado
+    
+    Returns:
+        float: valor base com desconto
+    '''
     valor_com_desconto = valor_base - (valor_base * (taxa_desconto / 100))
     return valor_com_desconto
 
